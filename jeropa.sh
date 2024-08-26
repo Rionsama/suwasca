@@ -59,7 +59,7 @@ header_info
 
 # Update package list and upgrade installed packages
 apt update
-apt upgrade
+apt upgrade -y
 # Download the Suwayomi Server package
 wget 'https://github.com/Suwayomi/Suwayomi-Server/releases/download/v1.1.1/Suwayomi-Server-v1.1.1-r1535-debian-all.deb'
 # Install the Suwayomi Server package

@@ -16,8 +16,6 @@ cat <<"EOF"
     |  |     |  |____     |  |     /  _____  \  .----)   |   
     |__|     |_______|    |__|    /__/     \__\ |_______/    
                                                              
-
-                                                                
 EOF
 }
 header_info
@@ -82,7 +80,7 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 EOF
-####
+
 
 msg_ok "Updated ${APP} to latest Git"
 # Reload systemd to apply the new service
@@ -98,11 +96,11 @@ msg_ok "Started ${APP} Service"
 msg_ok "Updated Successfully!\n"
 exit
 }
-########
+
 start
 build_container
 description
 
 msg_ok "Completed Successfully!\n"
-echo -e "${APP} Setup should be reachable by going to the following URL. SI a la paja segura!!
+echo -e "${APP} Setup should be reachable by going to the following URL. SI a la paja segura
          ${BL}http://${IP}:4567${CL} \n"
